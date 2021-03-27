@@ -1,0 +1,36 @@
+name: Download data
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron:  '00 05 * * *'
+jobs:
+  scheduled:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v2
+    - uses: actions/setup-node@v2
+      with:
+        node-version: '15'
+    - name: Download & process
+      run: |-
+        npm install
+        node download.js
+    - name: Commit changes
+      run: |-
+        git config user.name "njam-data"
+        git config user.email "njam-data@users.noreply.github.com"
+        git add .
+        datetime=$(date +"%Y-%m-%d_%H-%M-%S")
+        git commit -m "Download ${timestamp}" || exit 0
+        git push origin main
+    - uses: jakejarvis/s3-sync-action@master
+      with:
+        args: --acl public-read --follow-symlinks --delete
+      env:
+        AWS_S3_BUCKET: 'njam-data-archive'
+        AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
+        AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+        AWS_REGION: 'us-east-1'
+        SOURCE_DIR: 'data'
+        DEST_DIR: 'cdc-covid-vaccine-data'

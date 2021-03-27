@@ -1,0 +1,28 @@
+{
+  "name": "cdc-covid-vaccine-data",
+  "version": "0.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/njam-data/eph-covid-vaccines.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/njam-data/eph-covid-vaccines/issues"
+  },
+  "homepage": "https://github.com/njam-data/eph-covid-vaccines#readme",
+  "dependencies": {
+    "date-fns": "^2.19.0",
+    "desm": "^1.1.0",
+    "got": "^11.8.2"
+  },
+  "devDependencies": {
+    "standard": "^16.0.3"
+  }
+}
