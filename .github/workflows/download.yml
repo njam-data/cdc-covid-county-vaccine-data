@@ -21,8 +21,7 @@ jobs:
         git config user.name "njam-data"
         git config user.email "njam-data@users.noreply.github.com"
         git add .
-        datetime=$(date +"%Y-%m-%d_%H-%M-%S")
-        git commit -m "Download ${timestamp}" || exit 0
+        git commit -m "Download data" || exit 0
         git push origin main
     - uses: jakejarvis/s3-sync-action@master
       with:
