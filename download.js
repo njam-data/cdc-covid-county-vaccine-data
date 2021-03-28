@@ -1,5 +1,3 @@
-// https://covid.cdc.gov/covid-data-tracker/COVIDData/getAjaxData?id=vaccination_county_condensed_data
-
 import * as fs from 'fs/promises'
 import * as path from 'path'
 
@@ -22,17 +20,21 @@ async function main () {
 
     const result = await got(url, { responseType: 'json' })
     const { body } = result
+    const { vaccination_county_condensed_data } = body
 
-    if (await exists(dataFilepath)) {
-      console.log('already got data for this date')
+    const resultDates = vaccination_county_condensed_data.reduce((set, item) => {
+      set.add(item.Date)
+      return set
+    }, new Set())
+
+    if (!resultDates.has(date)) {
+      console.log('data not yet updated', resultDates.entries())
       return
     }
 
     await fs.mkdir(path.dirname(sourceDataFilepath), { recursive: true })
     await fs.mkdir(stateDataFilepath, { recursive: true })
     await writeJson(sourceDataFilepath, body)
-
-    const { vaccination_county_condensed_data } = body
 
     for (const item of vaccination_county_condensed_data) {
       if (!states[item.StateName]) {
@@ -47,7 +49,6 @@ async function main () {
       const stateFilepath = path.join(stateDataFilepath, `${stateKey}.json`)
       await writeJson(stateFilepath, state)
     }
-
   } catch (err) {
     console.error(err)
   }
