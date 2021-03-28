@@ -1,22 +1,24 @@
 {
-  "name": "cdc-covid-vaccine-data",
+  "name": "cdc-covid-county-vaccine-data",
   "version": "0.0.0",
   "description": "",
   "main": "index.js",
   "type": "module",
   "scripts": {
+    "lint": "standard",
+    "lintfix": "standard --fix",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/njam-data/eph-covid-vaccines.git"
+    "url": "git+https://github.com/njam-data/cdc-covid-county-vaccine-data.git"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/njam-data/eph-covid-vaccines/issues"
+    "url": "https://github.com/njam-data/cdc-covid-county-vaccine-data/issues"
   },
-  "homepage": "https://github.com/njam-data/eph-covid-vaccines#readme",
+  "homepage": "https://github.com/njam-data/cdc-covid-county-vaccine-data#readme",
   "dependencies": {
     "date-fns": "^2.19.0",
     "desm": "^1.1.0",

@@ -20,15 +20,18 @@ async function main () {
 
     const result = await got(url, { responseType: 'json' })
     const { body } = result
-    const { vaccination_county_condensed_data } = body
 
-    const resultDates = vaccination_county_condensed_data.reduce((set, item) => {
+    const { vaccination_county_condensed_data: vaccineData } = body
+
+    const resultDates = vaccineData.reduce((set, item) => {
       set.add(item.Date)
       return set
     }, new Set())
 
-    if (!resultDates.has(date)) {
-      console.log('data not yet updated', resultDates.entries())
+    const existingDataDates = await fs.readdir(join(import.meta.url, 'data'))
+
+    if (resultDates.has(date) && existingDataDates.includes(date)) {
+      console.log('data not yet updated', resultDates)
       return
     }
 
@@ -36,7 +39,7 @@ async function main () {
     await fs.mkdir(stateDataFilepath, { recursive: true })
     await writeJson(sourceDataFilepath, body)
 
-    for (const item of vaccination_county_condensed_data) {
+    for (const item of vaccineData) {
       if (!states[item.StateName]) {
         states[item.StateName] = {}
       }
