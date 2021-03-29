@@ -33,7 +33,7 @@ async function main () {
     const notUpdated = new Date(vaccineData[0].Date) < Date.now()
 
     console.log('resultDates', resultDates)
-    console.log(`notUpdated: ${notUpdated}, alreadyFetched: ${alreadyFetche}`)
+    console.log(`notUpdated: ${notUpdated}, alreadyFetched: ${alreadyFetched}`)
     if (notUpdated || alreadyFetched) {
       console.log('data not yet updated', resultDates)
       return
