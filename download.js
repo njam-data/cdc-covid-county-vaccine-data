@@ -29,8 +29,12 @@ async function main () {
     }, new Set())
 
     const existingDataDates = await fs.readdir(join(import.meta.url, 'data'))
+    const alreadyFetched = resultDates.has(date) && existingDataDates.includes(date)
+    const notUpdated = new Date(vaccineData[0].Date) < Date.now()
 
-    if (resultDates.has(date) && existingDataDates.includes(date)) {
+    console.log('resultDates', resultDates)
+    console.log(`notUpdated: ${notUpdated}, alreadyFetched: ${alreadyFetche}`)
+    if (notUpdated || alreadyFetched) {
       console.log('data not yet updated', resultDates)
       return
     }
