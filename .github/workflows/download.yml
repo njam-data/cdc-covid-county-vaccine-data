@@ -3,7 +3,7 @@ name: Download data
 on:
   workflow_dispatch:
   schedule:
-    - cron:  '07 05,10,18 * * *'
+    - cron:  '07 10,18 * * *'
 jobs:
   scheduled:
     runs-on: ubuntu-latest
