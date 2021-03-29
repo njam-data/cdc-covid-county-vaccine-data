@@ -1,0 +1,16 @@
+{
+  "District of Columbia": {
+    "Date": "2021-03-29",
+    "FIPS": "11001",
+    "StateName": "District of Columbia",
+    "StateAbbr": "DC ",
+    "County": "District of Columbia",
+    "Series_Complete_18Plus": 87726,
+    "Series_Complete_18PlusPop_Pct": 15.2,
+    "Series_Complete_65Plus": 39012,
+    "Series_Complete_65PlusPop_Pct": 44.7,
+    "Series_Complete_Yes": 87746,
+    "Series_Complete_Pop_Pct": 12.4,
+    "Completeness_pct": 96.1
+  }
+}
