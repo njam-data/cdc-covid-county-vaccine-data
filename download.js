@@ -39,7 +39,7 @@ async function main () {
     console.log(`notUpdated: ${notUpdated}, alreadyFetched: ${alreadyFetched}`)
 
     if (notUpdated || alreadyFetched) {
-      throw new Error(`data not yet updated. currentDate: ${currentDate}, availableDataDate: ${availableDataDate}, resultDates: ${resultDates}`)
+      throw new Error(`data not yet updated. currentDate: ${currentDate}, availableDataDate: ${availableDataDate}, resultDates: ${Array.from(resultDates).join(', ')}`)
     }
 
     await fs.mkdir(path.dirname(sourceDataFilepath), { recursive: true })
