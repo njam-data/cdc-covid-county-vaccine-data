@@ -37,9 +37,9 @@ async function main () {
     console.log(`currentDate: ${currentDate}, availableDataDate: ${availableDataDate}`)
     console.log('resultDates', resultDates)
     console.log(`notUpdated: ${notUpdated}, alreadyFetched: ${alreadyFetched}`)
+
     if (notUpdated || alreadyFetched) {
-      console.log('data not yet updated', resultDates)
-      return
+      throw new Error(`data not yet updated. currentDate: ${currentDate}, availableDataDate: ${availableDataDate}, resultDates: ${resultDates}`)
     }
 
     await fs.mkdir(path.dirname(sourceDataFilepath), { recursive: true })
