@@ -30,8 +30,11 @@ async function main () {
 
     const existingDataDates = await fs.readdir(join(import.meta.url, 'data'))
     const alreadyFetched = resultDates.has(date) && existingDataDates.includes(date)
-    const notUpdated = new Date(vaccineData[0].Date) >= new Date(Date.now())
+    const currentDate = new Date(Date.now())
+    const availableDataDate = new Date(vaccineData[0].Date)
+    const notUpdated = availableDataDate <= currentDate
 
+    console.log(`currentDate: ${currentDate}, availableDataDate: ${availableDataDate}`)
     console.log('resultDates', resultDates)
     console.log(`notUpdated: ${notUpdated}, alreadyFetched: ${alreadyFetched}`)
     if (notUpdated || alreadyFetched) {
@@ -55,7 +58,7 @@ async function main () {
       const state = states[stateKey]
       const stateName = stateKey.toLowerCase().replace(/\s/g, '_')
       const stateFilepath = path.join(stateDataFilepath, `${stateName}.json`)
-      await writeJson(stateFilepath, state)
+      // await writeJson(stateFilepath, state)
     }
   } catch (err) {
     console.error(err)

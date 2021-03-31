@@ -3,20 +3,27 @@ name: Download data
 on:
   workflow_dispatch:
   schedule:
-    - cron:  '07 10,18 * * *'
+    - cron:  '07 8,10,14 * * *'
 jobs:
-  scheduled:
+  setup:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v2
     - uses: actions/setup-node@v2
       with:
         node-version: '15'
+  download:
+    runs-on: ubuntu-latest
+    steps:
     - name: Download & process
       run: |-
         npm install
         node download.js
-    - name: Commit changes
+  save:
+    runs-on: ubuntu-latest
+    needs: download
+    steps:
+    - name: Commit changes 
       run: |-
         git config user.name "njam-data"
         git config user.email "njam-data@users.noreply.github.com"
