@@ -30,7 +30,7 @@ async function main () {
 
     const existingDataDates = await fs.readdir(join(import.meta.url, 'data'))
     const alreadyFetched = resultDates.has(date) && existingDataDates.includes(date)
-    const availableDataDate = format(new Date(vaccineData[0].Date), 'yyyy-MM-dd')
+    const availableDataDate = Array.from(resultDates)[0]
     const notUpdated = availableDataDate <= date
 
     console.log(`date: ${date}, availableDataDate: ${availableDataDate}`)
