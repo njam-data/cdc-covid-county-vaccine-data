@@ -31,7 +31,7 @@ async function main () {
     const existingDataDates = await fs.readdir(join(import.meta.url, 'data'))
     const alreadyFetched = resultDates.has(date) && existingDataDates.includes(date)
     const availableDataDate = Array.from(resultDates)[0]
-    const notUpdated = availableDataDate <= date
+    const notUpdated = availableDataDate < date
 
     console.log(`date: ${date}, availableDataDate: ${availableDataDate}`)
     console.log('resultDates', resultDates)
