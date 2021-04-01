@@ -57,7 +57,7 @@ async function main () {
       const state = states[stateKey]
       const stateName = stateKey.toLowerCase().replace(/\s/g, '_')
       const stateFilepath = path.join(stateDataFilepath, `${stateName}.json`)
-      // await writeJson(stateFilepath, state)
+      await writeJson(stateFilepath, state)
     }
   } catch (err) {
     console.error(err)
