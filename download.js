@@ -30,16 +30,15 @@ async function main () {
 
     const existingDataDates = await fs.readdir(join(import.meta.url, 'data'))
     const alreadyFetched = resultDates.has(date) && existingDataDates.includes(date)
-    const currentDate = new Date(Date.now())
-    const availableDataDate = new Date(vaccineData[0].Date)
-    const notUpdated = availableDataDate <= currentDate
+    const availableDataDate = format(new Date(vaccineData[0].Date), 'yyyy-MM-dd')
+    const notUpdated = availableDataDate <= date
 
-    console.log(`currentDate: ${currentDate}, availableDataDate: ${availableDataDate}`)
+    console.log(`date: ${date}, availableDataDate: ${availableDataDate}`)
     console.log('resultDates', resultDates)
     console.log(`notUpdated: ${notUpdated}, alreadyFetched: ${alreadyFetched}`)
 
     if (notUpdated || alreadyFetched) {
-      throw new Error(`data not yet updated. currentDate: ${currentDate}, availableDataDate: ${availableDataDate}, resultDates: ${Array.from(resultDates).join(', ')}`)
+      throw new Error(`data not yet updated. date: ${date}, availableDataDate: ${availableDataDate}, resultDates: ${Array.from(resultDates).join(', ')}`)
     }
 
     await fs.mkdir(path.dirname(sourceDataFilepath), { recursive: true })
