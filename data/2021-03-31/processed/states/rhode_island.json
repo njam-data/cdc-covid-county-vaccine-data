@@ -1,0 +1,72 @@
+{
+  "Bristol": {
+    "Date": "2021-03-31",
+    "FIPS": "44001",
+    "StateName": "Rhode Island",
+    "StateAbbr": "RI ",
+    "County": "Bristol",
+    "Series_Complete_18Plus": 11245,
+    "Series_Complete_18PlusPop_Pct": 28.5,
+    "Series_Complete_65Plus": 6757,
+    "Series_Complete_65PlusPop_Pct": 69,
+    "Series_Complete_Yes": 11253,
+    "Series_Complete_Pop_Pct": 23.2,
+    "Completeness_pct": 94.9
+  },
+  "Kent": {
+    "Date": "2021-03-31",
+    "FIPS": "44003",
+    "StateName": "Rhode Island",
+    "StateAbbr": "RI ",
+    "County": "Kent",
+    "Series_Complete_18Plus": 38677,
+    "Series_Complete_18PlusPop_Pct": 28.9,
+    "Series_Complete_65Plus": 21788,
+    "Series_Complete_65PlusPop_Pct": 68.5,
+    "Series_Complete_Yes": 38708,
+    "Series_Complete_Pop_Pct": 23.6,
+    "Completeness_pct": 94.9
+  },
+  "Newport": {
+    "Date": "2021-03-31",
+    "FIPS": "44005",
+    "StateName": "Rhode Island",
+    "StateAbbr": "RI ",
+    "County": "Newport",
+    "Series_Complete_18Plus": 17432,
+    "Series_Complete_18PlusPop_Pct": 25.5,
+    "Series_Complete_65Plus": 10826,
+    "Series_Complete_65PlusPop_Pct": 57.9,
+    "Series_Complete_Yes": 17439,
+    "Series_Complete_Pop_Pct": 21.2,
+    "Completeness_pct": 94.9
+  },
+  "Providence": {
+    "Date": "2021-03-31",
+    "FIPS": "44007",
+    "StateName": "Rhode Island",
+    "StateAbbr": "RI ",
+    "County": "Providence",
+    "Series_Complete_18Plus": 114317,
+    "Series_Complete_18PlusPop_Pct": 22.5,
+    "Series_Complete_65Plus": 57870,
+    "Series_Complete_65PlusPop_Pct": 58,
+    "Series_Complete_Yes": 114401,
+    "Series_Complete_Pop_Pct": 17.9,
+    "Completeness_pct": 94.9
+  },
+  "Washington": {
+    "Date": "2021-03-31",
+    "FIPS": "44009",
+    "StateName": "Rhode Island",
+    "StateAbbr": "RI ",
+    "County": "Washington",
+    "Series_Complete_18Plus": 28692,
+    "Series_Complete_18PlusPop_Pct": 27.3,
+    "Series_Complete_65Plus": 17238,
+    "Series_Complete_65PlusPop_Pct": 63.9,
+    "Series_Complete_Yes": 28715,
+    "Series_Complete_Pop_Pct": 22.9,
+    "Completeness_pct": 94.9
+  }
+}
