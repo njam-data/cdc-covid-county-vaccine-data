@@ -1,0 +1,16 @@
+{
+  "Unknown County": {
+    "Date": "2021-04-09",
+    "FIPS": "UNK",
+    "StateName": "Northern Mariana Islands",
+    "StateAbbr": "MP ",
+    "County": "Unknown County",
+    "Series_Complete_18Plus": 13233,
+    "Series_Complete_18PlusPop_Pct": null,
+    "Series_Complete_65Plus": 2153,
+    "Series_Complete_65PlusPop_Pct": null,
+    "Series_Complete_Yes": 13250,
+    "Series_Complete_Pop_Pct": null,
+    "Completeness_pct": null
+  }
+}
