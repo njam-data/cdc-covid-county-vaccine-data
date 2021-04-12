@@ -1,0 +1,16 @@
+{
+  "Unknown County": {
+    "Date": "2021-04-12",
+    "FIPS": "UNK",
+    "StateName": "Palau",
+    "StateAbbr": "PW ",
+    "County": "Unknown County",
+    "Series_Complete_18Plus": 6409,
+    "Series_Complete_18PlusPop_Pct": null,
+    "Series_Complete_65Plus": 1386,
+    "Series_Complete_65PlusPop_Pct": null,
+    "Series_Complete_Yes": 6409,
+    "Series_Complete_Pop_Pct": null,
+    "Completeness_pct": null
+  }
+}
