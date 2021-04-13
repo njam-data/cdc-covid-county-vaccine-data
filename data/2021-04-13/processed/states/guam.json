@@ -1,0 +1,30 @@
+{
+  "Guam": {
+    "Date": "2021-04-13",
+    "FIPS": "66010",
+    "StateName": "Guam",
+    "StateAbbr": "GU ",
+    "County": "Guam",
+    "Series_Complete_18Plus": 30233,
+    "Series_Complete_18PlusPop_Pct": 23.4,
+    "Series_Complete_65Plus": 8245,
+    "Series_Complete_65PlusPop_Pct": 29.4,
+    "Series_Complete_Yes": 30257,
+    "Series_Complete_Pop_Pct": 18.3,
+    "Completeness_pct": 80.1
+  },
+  "Unknown County": {
+    "Date": "2021-04-13",
+    "FIPS": "UNK",
+    "StateName": "Guam",
+    "StateAbbr": "GU ",
+    "County": "Unknown County",
+    "Series_Complete_18Plus": 7504,
+    "Series_Complete_18PlusPop_Pct": null,
+    "Series_Complete_65Plus": 2422,
+    "Series_Complete_65PlusPop_Pct": null,
+    "Series_Complete_Yes": 7510,
+    "Series_Complete_Pop_Pct": null,
+    "Completeness_pct": 80.1
+  }
+}
