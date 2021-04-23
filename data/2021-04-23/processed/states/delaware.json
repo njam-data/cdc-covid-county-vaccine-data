@@ -1,0 +1,58 @@
+{
+  "Kent": {
+    "Date": "2021-04-23",
+    "FIPS": "10001",
+    "StateName": "Delaware",
+    "StateAbbr": "DE ",
+    "County": "Kent",
+    "Series_Complete_18Plus": 39173,
+    "Series_Complete_18PlusPop_Pct": 28.1,
+    "Series_Complete_65Plus": 18900,
+    "Series_Complete_65PlusPop_Pct": 59.8,
+    "Series_Complete_Yes": 39269,
+    "Series_Complete_Pop_Pct": 21.7,
+    "Completeness_pct": 96.2
+  },
+  "New Castle": {
+    "Date": "2021-04-23",
+    "FIPS": "10003",
+    "StateName": "Delaware",
+    "StateAbbr": "DE ",
+    "County": "New Castle",
+    "Series_Complete_18Plus": 144772,
+    "Series_Complete_18PlusPop_Pct": 33,
+    "Series_Complete_65Plus": 61579,
+    "Series_Complete_65PlusPop_Pct": 68.5,
+    "Series_Complete_Yes": 145438,
+    "Series_Complete_Pop_Pct": 26,
+    "Completeness_pct": 96.2
+  },
+  "Sussex": {
+    "Date": "2021-04-23",
+    "FIPS": "10005",
+    "StateName": "Delaware",
+    "StateAbbr": "DE ",
+    "County": "Sussex",
+    "Series_Complete_18Plus": 80331,
+    "Series_Complete_18PlusPop_Pct": 42,
+    "Series_Complete_65Plus": 49471,
+    "Series_Complete_65PlusPop_Pct": 73.5,
+    "Series_Complete_Yes": 80491,
+    "Series_Complete_Pop_Pct": 34.4,
+    "Completeness_pct": 96.2
+  },
+  "Unknown County": {
+    "Date": "2021-04-23",
+    "FIPS": "UNK",
+    "StateName": "Delaware",
+    "StateAbbr": "DE ",
+    "County": "Unknown County",
+    "Series_Complete_18Plus": 10346,
+    "Series_Complete_18PlusPop_Pct": null,
+    "Series_Complete_65Plus": 3896,
+    "Series_Complete_65PlusPop_Pct": null,
+    "Series_Complete_Yes": 10361,
+    "Series_Complete_Pop_Pct": null,
+    "Completeness_pct": 96.2
+  }
+}
