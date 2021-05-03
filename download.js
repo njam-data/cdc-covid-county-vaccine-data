@@ -5,21 +5,28 @@ import { format } from 'date-fns'
 import { join } from 'desm'
 import got from 'got'
 
-import { writeJson } from './lib/fs.js'
+import { writeJson, readJson } from './lib/fs.js'
 
 const url = 'https://covid.cdc.gov/covid-data-tracker/COVIDData/getAjaxData?id=vaccination_county_condensed_data'
 
+const specificDate = process.argv.slice(2)[0]
+
 async function main () {
   try {
-    const date = format(Date.now(), 'yyyy-MM-dd')
+    const date = specificDate || format(Date.now(), 'yyyy-MM-dd')
     const dataFilepath = join(import.meta.url, 'data', date)
     const sourceDataFilepath = path.join(dataFilepath, 'source', 'vaccinations.json')
     const processedDataFilepath = path.join(dataFilepath, 'processed')
     const stateDataFilepath = path.join(processedDataFilepath, 'states')
     const states = {}
 
-    const result = await got(url, { responseType: 'json' })
-    const { body } = result
+    let body
+    if (specificDate) {
+      const result = await got(url, { responseType: 'json' })
+      body = result.body
+    } else {
+      body = await readJson(sourceDataFilepath)
+    }
 
     const { vaccination_county_condensed_data: vaccineData } = body
 
@@ -37,7 +44,7 @@ async function main () {
     console.log('resultDates', resultDates)
     console.log(`notUpdated: ${notUpdated}, alreadyFetched: ${alreadyFetched}`)
 
-    if (notUpdated || alreadyFetched) {
+    if (!specificDate && (notUpdated || alreadyFetched)) {
       throw new Error(`data not yet updated. date: ${date}, availableDataDate: ${availableDataDate}, resultDates: ${Array.from(resultDates).join(', ')}`)
     }
 
