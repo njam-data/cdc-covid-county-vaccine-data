@@ -21,7 +21,7 @@ async function main () {
     const states = {}
 
     let body
-    if (specificDate) {
+    if (!specificDate) {
       const result = await got(url, { responseType: 'json' })
       body = result.body
     } else {
