@@ -1,0 +1,19 @@
+{
+  "Unknown County": {
+    "Date": "2021-05-19",
+    "FIPS": "UNK",
+    "StateName": "American Samoa",
+    "StateAbbr": "AS ",
+    "County": "Unknown County",
+    "Series_Complete_18Plus": 18038,
+    "Series_Complete_18PlusPop_Pct": null,
+    "Series_Complete_65Plus": 2254,
+    "Series_Complete_65PlusPop_Pct": null,
+    "Series_Complete_Yes": 18655,
+    "Series_Complete_Pop_Pct": null,
+    "Completeness_pct": null,
+    "Census2019_12PlusPop": null,
+    "Series_Complete_12Plus": 18654,
+    "Series_Complete_12PlusPop_Pct": null
+  }
+}
