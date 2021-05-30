@@ -1,0 +1,36 @@
+{
+  "District of Columbia": {
+    "Date": "2021-05-30",
+    "FIPS": "11001",
+    "StateName": "District of Columbia",
+    "StateAbbr": "DC ",
+    "County": "District of Columbia",
+    "Series_Complete_18Plus": 305710,
+    "Series_Complete_18PlusPop_Pct": 52.9,
+    "Series_Complete_65Plus": 61082,
+    "Series_Complete_65PlusPop_Pct": 69.9,
+    "Series_Complete_Yes": 307749,
+    "Series_Complete_Pop_Pct": 43.6,
+    "Completeness_pct": 94.4,
+    "Census2019_12PlusPop": 609754,
+    "Series_Complete_12Plus": 307735,
+    "Series_Complete_12PlusPop_Pct": 50.5
+  },
+  "Unknown County": {
+    "Date": "2021-05-30",
+    "FIPS": "UNK",
+    "StateName": "District of Columbia",
+    "StateAbbr": "DC ",
+    "County": "Unknown County",
+    "Series_Complete_18Plus": 18249,
+    "Series_Complete_18PlusPop_Pct": null,
+    "Series_Complete_65Plus": 1846,
+    "Series_Complete_65PlusPop_Pct": null,
+    "Series_Complete_Yes": 18294,
+    "Series_Complete_Pop_Pct": null,
+    "Completeness_pct": 94.4,
+    "Census2019_12PlusPop": null,
+    "Series_Complete_12Plus": 18294,
+    "Series_Complete_12PlusPop_Pct": null
+  }
+}
