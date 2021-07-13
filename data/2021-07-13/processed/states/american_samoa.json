@@ -1,0 +1,32 @@
+{
+  "Unknown County": {
+    "Date": "2021-07-13",
+    "FIPS": "UNK",
+    "StateName": "American Samoa",
+    "StateAbbr": "AS ",
+    "County": "Unknown County",
+    "Series_Complete_18Plus": 20952,
+    "Series_Complete_18PlusPop_Pct": null,
+    "Series_Complete_65Plus": 2413,
+    "Series_Complete_65PlusPop_Pct": null,
+    "Series_Complete_Yes": 22234,
+    "Series_Complete_Pop_Pct": null,
+    "Completeness_pct": null,
+    "Census2019_12PlusPop": null,
+    "Series_Complete_12Plus": 22232,
+    "Series_Complete_12PlusPop_Pct": null,
+    "Administered_Dose1_Recip": 27083,
+    "Administered_Dose1_Recip_12Plus": 27078,
+    "Administered_Dose1_Recip_18Plus": 24663,
+    "Administered_Dose1_Recip_65Plus": 2660,
+    "Administered_Dose1_Pop_Pct": null,
+    "Administered_Dose1_Recip_12PlusPop_Pct": null,
+    "Administered_Dose1_Recip_18PlusPop_Pct": null,
+    "Administered_Dose1_Recip_65PlusPop_Pct": null,
+    "Series_Complete_Pop_Pct_SVI": "",
+    "Series_Complete_12PlusPop_Pct_SVI": "",
+    "Series_Complete_18PlusPop_Pct_SVI": "",
+    "Series_Complete_65PlusPop_Pct_SVI": "",
+    "SVI_CTGY": ""
+  }
+}
