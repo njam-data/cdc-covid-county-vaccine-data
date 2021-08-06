@@ -1,0 +1,32 @@
+{
+  "Unknown County": {
+    "Date": "2021-08-06",
+    "FIPS": "UNK",
+    "StateName": "Northern Mariana Islands",
+    "StateAbbr": "MP ",
+    "County": "Unknown County",
+    "Series_Complete_18Plus": 27243,
+    "Series_Complete_18PlusPop_Pct": null,
+    "Series_Complete_65Plus": 2748,
+    "Series_Complete_65PlusPop_Pct": null,
+    "Series_Complete_Yes": 30095,
+    "Series_Complete_Pop_Pct": null,
+    "Completeness_pct": null,
+    "Census2019_12PlusPop": null,
+    "Series_Complete_12Plus": 30095,
+    "Series_Complete_12PlusPop_Pct": null,
+    "Administered_Dose1_Recip": 33033,
+    "Administered_Dose1_Recip_12Plus": 33033,
+    "Administered_Dose1_Recip_18Plus": 29352,
+    "Administered_Dose1_Recip_65Plus": 2836,
+    "Administered_Dose1_Pop_Pct": null,
+    "Administered_Dose1_Recip_12PlusPop_Pct": null,
+    "Administered_Dose1_Recip_18PlusPop_Pct": null,
+    "Administered_Dose1_Recip_65PlusPop_Pct": null,
+    "Series_Complete_Pop_Pct_SVI": "",
+    "Series_Complete_12PlusPop_Pct_SVI": "",
+    "Series_Complete_18PlusPop_Pct_SVI": "",
+    "Series_Complete_65PlusPop_Pct_SVI": "",
+    "SVI_CTGY": ""
+  }
+}
